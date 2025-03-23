@@ -97,7 +97,6 @@ p {
 }
 
 /* Projects Section Styles */
-
 #projects .container {
   display: flex;
   flex-direction: row;
@@ -136,7 +135,6 @@ p {
 }
 
 /* Education Section Styles */
-
 #Education .container {
   display: flex;
   flex-direction: row;
@@ -168,7 +166,7 @@ p {
   text-decoration: underline;
 }
 
-/*Skills*/
+/* Skills Section Styles */
 #skills .container {
   display: flex;
   flex-direction: row;
@@ -200,7 +198,7 @@ p {
   text-decoration: underline;
 }
 
-/*Hobbies*/
+/* Hobbies Section Styles */
 #Hobbies .container {
   display: flex;
   flex-direction: row;
@@ -232,7 +230,7 @@ p {
   text-decoration: underline;
 }
 
-/*Contact*/
+/* Contact Section Styles */
 #About .container {
   display: flex;
   flex-direction: row;
@@ -263,36 +261,129 @@ p {
 #About .item > p {
   text-decoration: underline;
 }
-/*Ensure footer is visible */
+
+/* Footer Styles */
 #footer .container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   background-color: #007bff;
   margin: 0;
   color: white;
-  bottom: 0;
   padding: 0;
   width: 100%;
 }
-#footer .item {
-  margin: 0;
-  height: 85px;
-  background-color: #007bff;
-  margin-bottom: 2px;
-}
+
 footer p {
   margin-top: 30px;
   font-size: 18px;
+  text-align: center;
 }
+
 .follow {
   margin-top: 8px;
   margin-bottom: 10px;
 }
+
 .item a {
   margin-right: 15px;
 }
+
 .icons {
   filter: brightness(0) invert(1);
+}
+
+/* RESPONSIVENESS */
+@media screen and (max-width: 768px) {
+  /* Header Adjustments */
+  #header .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo {
+    font-size: 28px;
+    margin: 10px;
+  }
+
+  #header a {
+    font-size: 18px;
+    margin: 5px;
+  }
+
+  /* Hero Section */
+  #hero h2 {
+    font-size: 50px;
+    margin-top: 10vh;
+  }
+
+  /* Projects Section */
+  #projects .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #projects .item {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+
+  /* Education Section */
+  #Education .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #Education .item {
+    width: 90%;
+  }
+
+  /* Skills Section */
+  #skills .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #skills .item {
+    width: 90%;
+  }
+
+  /* Hobbies Section */
+  #Hobbies .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #Hobbies .item {
+    width: 90%;
+  }
+
+  /* Contact Section */
+  #About .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #About .item {
+    width: 90%;
+  }
+
+  /* Footer */
+  #footer .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .item {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  footer p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
 }
